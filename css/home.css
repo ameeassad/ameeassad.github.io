@@ -1,0 +1,78 @@
+  body {
+    margin: 0;
+    height: 100%;
+    width: 100%;
+  }
+
+  h1{
+    font-size: 24pt;
+    text-align: center;
+    margin-right: 5%;
+    font-family: "Andale Mono", monospace;
+  }
+  #footer{
+    position: fixed;
+    font-size: 10pt;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  .background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-image: url("../images/background-wide.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: -1;
+  }
+  
+  .background .water {
+    position: absolute;
+    background-image: url("../images/seamap-wide.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    top:0;
+    left:0;
+    height: 100%;
+    width: 100%;
+    filter: url("#turbulence");
+    z-index: -1;
+    
+  }
+
+  .social{
+    text-align: right;
+    padding: 5px;
+  }
+
+  .fa {
+    padding: 5px;
+    font-size: 30px;
+    margin-right: 3px;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+  }
+
+  .fa:hover {
+    opacity: 0.7;
+  }
+  
+  .fa-linkedin {
+    background: #0e76a8;
+    color: white;
+  }
+  
+  .fa-instagram {
+    background: #d6249f;
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+    color: white;
+  }
+  
