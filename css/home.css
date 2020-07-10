@@ -10,11 +10,17 @@
     margin-right: 5%;
     font-family: "Andale Mono", monospace;
   }
+  .firstname{
+    letter-spacing:5px;
+  }
   #footer{
     position: fixed;
     font-size: 10pt;
     bottom: 0;
     width: 100%;
+    text-align: right;
+    margin-right: 5px;
+    margin-bottom: 5px;
   }
   
   .background {
@@ -44,14 +50,49 @@
     z-index: -1;
     
   }
-
-  .social{
-    text-align: right;
-    padding: 5px;
+  .pages{
+    margin-left: 5%;
+    position: absolute;
+    font-family: "Andale Mono", monospace;
+    font-size: 10pt;
+    display: inline-block;
+    width: 500px;
+    margin-top: 1.5%;
+  }
+  .page{
+    display: inline;
+    margin-right: 2%;
+  }
+  .page:hover{
+    font-weight: 600;
+    cursor: pointer;
+  }
+  .ref:hover ~ .background .water{
+    filter:none;
   }
 
-  .fa {
+  .social{
+    position: absolute;
     padding: 5px;
+    margin-right: 30px;
+    display: inline-block;
+    right: 7%;
+    width: 250px;
+  }
+  .logos{
+    border-radius: 50%;
+    margin-right: 12%;
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    object-fit: cover;
+  }
+  .logos:hover {
+    opacity: 0.7;
+  }
+
+  .fa{
+    padding: 3px;
     font-size: 30px;
     margin-right: 3px;
     width: 20px;
@@ -59,10 +100,6 @@
     text-align: center;
     text-decoration: none;
     border-radius: 50%;
-  }
-
-  .fa:hover {
-    opacity: 0.7;
   }
   
   .fa-linkedin {
@@ -75,4 +112,34 @@
     background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
     color: white;
   }
+
+  .slider {
+    margin-top: 14%;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    overflow: hidden;
+    background-image: linear-gradient(white, gainsboro);
+    color: black;
+    transition: all 1s;
+    font-family: "Andale Mono", monospace;
+    font-size: 10pt;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
   
+  .slider.close {
+    top: 100%;
+    height: 0;
+  }
+
+  .slow{
+    color: rgba(3, 3, 3, 0.582);
+    font-style: italic;
+    font-size: 11pt;
+    margin-left: 5%;
+  }
+  .background .water:target{
+    filter:none;
+  }
