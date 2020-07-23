@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>COVID-19 Masks</title>
+    <meta charset="utf-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="css/simple-sidebar.css" rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js"></script>
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+
+
+
+    <title>Mask Quiz</title>
+        
+    <style>
+        h1{
+            padding: 5%;
+            font-size: 22pt;
+            text-align: center;
+        }
+        .bold{
+            font-weight: 700;
+        }
+        .title{
+            text-align: center;
+            font-size: 24pt;
+        }
+        .button {
+            width: 80px;
+            height: 25px;
+            text-align: center;
+            float:right;
+            background-color: rgba(183, 231, 240, 0.5);
+            margin: 0 2px 0 2px;
+            cursor: pointer;
+            font-size: 12pt;
+        }
+        .button a {
+            text-decoration: none;
+            color: #555;
+            line-height: 25px;
+        }
+        ul 
+        {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            width: 500px;
+        }
+        ul li
+        {
+            background: rgba(183, 231, 240, 0.5);
+            width: 200px;
+            margin: 10px;
+            padding: 5px;
+            display: inline-block; 
+        }
+        #prev 
+        {
+            display:none;
+        }
+        #start 
+        {
+            display:none;
+            width: 100px;
+        }
+        input[type="radio"]{
+            cursor: pointer;
+        }
+        #warning{
+            padding: 5%;
+            background: rgba(183, 231, 240, 0.5);
+            margin-bottom: 5%;
+            font-size: 12pt;
+        }
+        #question{
+            font-size: 12pt;
+            margin: 5%;
+        }
+        #finalscore{
+            font-size: 14pt;
+            margin: 5%;
+        }
+        #explanation{
+            margin: 5%;
+            font-size: 12pt;
+        }
+        .link{
+            font-size: 12pt;
+            margin: 5%;
+        }
+        #intro{
+            padding-bottom: 5%;
+            padding-top: 5%;
+            font-size: 12pt;
+        }
+        #proceed{
+            width: auto;
+            height: auto;
+            padding: 5pt;
+            font-weight: bold;
+        }
+
+
+    </style>
+
+<script>
+    $(document).ready(function(){
+
+        $("#menu-toggle").click(function(e) {
+            e.preventDefault();
+            $("#wrapper").toggleClass("toggled");
+        });
+    })
+
+    </script>
+
+    <style>
+        
+        #sidebar-wrapper {
+            min-height: 100vh;
+            margin-left: -15rem;
+            -webkit-transition: margin .25s ease-out;
+            -moz-transition: margin .25s ease-out;
+            -o-transition: margin .25s ease-out;
+            transition: margin .25s ease-out;
+        }
+
+        #sidebar-wrapper .sidebar-heading {
+            padding: 0.875rem 1.25rem;
+            font-size: 1.2rem;
+        }
+
+        #sidebar-wrapper .list-group {
+            width: 15rem;
+        }
+
+        #page-content-wrapper {
+            min-width: 100vw;
+        }
+
+        #wrapper.toggled #sidebar-wrapper {
+            margin-left: 0;
+        }
+
+        @media (min-width: 768px) {
+            #sidebar-wrapper {
+                margin-left: 0;
+            }
+
+            #page-content-wrapper {
+                min-width: 0;
+                width: 100%;
+            }
+
+            #wrapper.toggled #sidebar-wrapper {
+                margin-left: -15rem;
+            }
+        }
+
+        img{
+            max-height: 300px;
+        }
+        .container-fluid{
+            font-size: 10pt;
+        }
+        .sidetitle{
+            font-size: 9.5pt;
+        }
+    
+    </style>
+    
+</head>
+
+<body>
+    <div class="d-flex" id="wrapper">
+    <!-- Sidebar -->
+    <div class="bg-light border-right" id="sidebar-wrapper">
+        <div class="sidebar-heading"> </div>
+        <div class="list-group list-group-flush">
+          <a href="home.html" class="sidetitle list-group-item list-group-item-action bg-light">HOME</a>
+          <a href="masks.html" class="sidetitle list-group-item list-group-item-action bg-light">1) The 4 Mask Types</a>
+          <a href="care.html" class="sidetitle list-group-item list-group-item-action bg-light">2) Mask Care</a>
+          <a href="safety.html" class="sidetitle list-group-item list-group-item-action bg-light">3) Mask Safety</a>
+          <a href="quiz.html" class="sidetitle list-group-item list-group-item-action bg-light">4) Quiz</a>
+        </div>
+      </div>
+      <!-- /#sidebar-wrapper -->
+
+    <div class="container">
+    
+<div id="container">
+    <h1>COVID-19 Mask Quiz</h1>
+       <br/>
+       <div id="intro">
+        Before you go out into the world with your mask, take this 10-question quiz to test you knowlege!
+       </div>
+       <div id='warning'>
+       <span class="bold"> Before you proceed, please acknolwedge that:</span>
+       <br><br>
+       Even with a mask, social distancing and hand washing are vital to stop the spread of the virus. 
+        <br><br>
+        Masks may make us feel safer, but they can also be the source of the spread. The virus will stick to almost all surfaces, including my mask.
+       </div>
+
+      <div id="quiz"></div>
+    <div class="button" id="next"><a href="#">Next</a></div>
+    <div class="button" id="prev"><a href="#">Prev</a></div> 
+</div>
+
+<script src="js/quiz.js"></script>
+</div>
+</div>
+</body>
+</html>

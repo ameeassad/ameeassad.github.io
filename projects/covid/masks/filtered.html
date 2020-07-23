@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>COVID-19 Masks</title>
+    <meta charset="utf-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="css/simple-sidebar.css" rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js"></script>
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+
+
+    <style>
+        h1{
+            padding: 5%;
+            font-size: 18pt;
+            text-align: center;
+            margin-left: 30%;
+        }
+        button{
+            font-size: 10pt;
+        }
+        img{
+            display: block;
+            margin-left: 12%;
+            width: 70%;
+            height: auto;
+            object-fit: scale-down;
+        }
+        .bold{
+            font-weight: 700;
+        }
+        span {
+            display: inline-block;
+        }
+        .materials{
+            background-color:rgba(183, 231, 240, 0.5);
+            width: 580px;
+            display: inline-block;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 3%;
+        }
+        .tips{
+            padding: 3%;
+            width: 350px;
+            background-color: rgba(183, 231, 240, 0.5);
+            display: inline-block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .row{
+            font-size: 11pt;
+        }
+        ul{
+            padding: 10px;
+            display: inline-block;
+            vertical-align: top;
+        }
+        .info{
+            margin-left: auto;
+            margin-right: auto;
+            padding-left: 5%;
+            padding-right: 5%;
+        }
+           
+    </style>
+
+<script>
+    $(document).ready(function(){
+
+        $("#menu-toggle").click(function(e) {
+            e.preventDefault();
+            $("#wrapper").toggleClass("toggled");
+        });
+    })
+
+    </script>
+
+    <style>
+        
+        #sidebar-wrapper {
+            min-height: 100vh;
+            margin-left: -15rem;
+            -webkit-transition: margin .25s ease-out;
+            -moz-transition: margin .25s ease-out;
+            -o-transition: margin .25s ease-out;
+            transition: margin .25s ease-out;
+        }
+
+        #sidebar-wrapper .sidebar-heading {
+            padding: 0.875rem 1.25rem;
+            font-size: 1.2rem;
+        }
+
+        #sidebar-wrapper .list-group {
+            width: 15rem;
+        }
+
+        #page-content-wrapper {
+            min-width: 100vw;
+        }
+
+        #wrapper.toggled #sidebar-wrapper {
+            margin-left: 0;
+        }
+
+        @media (min-width: 768px) {
+            #sidebar-wrapper {
+                margin-left: 0;
+            }
+
+            #page-content-wrapper {
+                min-width: 0;
+                width: 100%;
+            }
+
+            #wrapper.toggled #sidebar-wrapper {
+                margin-left: -15rem;
+            }
+        }
+
+        img{
+            max-height: 300px;
+        }
+        .container-fluid{
+            font-size: 10pt;
+        }
+        .sidetitle{
+            font-size: 9.5pt;
+        }
+    
+    </style>
+    
+</head>
+
+<body>
+    <div class="d-flex" id="wrapper">
+    <!-- Sidebar -->
+    <div class="bg-light border-right" id="sidebar-wrapper">
+        <div class="sidebar-heading"> </div>
+        <div class="list-group list-group-flush">
+          <a href="../home.html" class="sidetitle list-group-item list-group-item-action bg-light">HOME</a>
+          <a href="../masks.html" class="sidetitle list-group-item list-group-item-action bg-light">1) The 4 Mask Types</a>
+          <a href="../care.html" class="sidetitle list-group-item list-group-item-action bg-light">2) Mask Care</a>
+          <a href="../safety.html" class="sidetitle list-group-item list-group-item-action bg-light">3) Mask Safety</a>
+          <a href="../quiz.html" class="sidetitle list-group-item list-group-item-action bg-light">4) Quiz</a>
+        </div>
+      </div>
+      <!-- /#sidebar-wrapper -->
+
+    <div class="container">
+
+<div class="container">
+
+<div class="row">
+        <br><a href="../masks.html">Back</a> 
+        <h1>Fabric with Filter</h1><br><br>
+        <div class="info">
+            Some fabric masks have a pocket sewn on the inside for you to add a filter for better protection. 
+            However, some filter materials present dangerous risks to your health: many are not breathable and may contain harmful fibers that you could inhale. 
+        </div>
+
+        <br><br>
+        <img src=../images/filtered2.png alt="image for filtered mask"> <br><br>
+</div>
+<div class="row">
+
+        <div class = "portlet-container portlet-dropzone materials">
+            <ul>
+                <h2>FILTER MATERIALS:</h2> <br>
+                <li><span class='bold'>Coffee filters:</span> WARNING: using three or more coffee filters makes it difficult to breathe</li>
+                <li><span class='bold'>Paper towels:</span> A single paper towel filters 23 percent of 0.3 microns and two paper towels filtered 33 percent</li>
+                <li><span class='bold'>Air filters:</span> WARNING: when cut up, they can release fibers that can be dangerous to inhale, so the filter material should be sandwiched between layers of heavy cotton fabric</li>
+                <li><span class='bold'>HEPA vacuum bags:</span> WARNING: do not use if contains fiberglass</li>
+                </ul>
+        </div>
+
+    <div class="portlet-container portlet-dropzone tips">
+        <ul>
+            <h2>TIPS</h2>
+            <li>Whatever filter you use, make sure there is a layer of cotton or a similar material on either side of the filter, like the pocket in this mask</li>
+            <li>Make sure there are no gaps between the edge of the mask and your skin</li>
+        </ul>
+    </div>
+</div>
+</div>
+
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>COVID-19 Masks</title>
+    <meta charset="utf-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="css/simple-sidebar.css" rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js"></script>
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+
+
+    <script>
+
+        $(document).ready(function(){
+            console.log("ready")
+
+        })
+    </script>
+        
+    <style>
+        .container{
+            position: absolute;
+            margin: auto;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 100px;
+            width: auto;
+        }
+        body {
+            background-image: url('images/home.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        h1{
+            padding: 5%;
+            font-size: 22pt;
+            text-align: center;
+        }
+        img {
+            width: 100%;
+            height: 200px;
+            object-fit:scale-down
+        }
+        #mission{
+            font-size: 16px;
+            text-align: center;
+            width: 500px;
+            margin-left: auto;
+            margin-right: auto;
+            width: 400px;
+            height: 150px;
+        }
+        .bold{
+            font-weight: 700;
+        }
+        .mask{
+            text-align: center;
+            font-size: 18pt;
+            padding-bottom: 5%;
+        }
+        a{
+            color:darkslateblue;
+        }
+        .go{
+            background-color: rgb(255, 252, 239);
+            padding: 2px;
+        }
+        #links{
+            font-size: 16px;
+            text-align: center;
+            width: 500px;
+            margin: auto;
+            width: 600px;
+            height: 100px;
+        }
+
+
+    </style>
+
+<script>
+    $(document).ready(function(){
+
+        $("#menu-toggle").click(function(e) {
+            e.preventDefault();
+            $("#wrapper").toggleClass("toggled");
+        });
+    })
+
+    </script>
+
+    <style>
+        
+        #sidebar-wrapper {
+            min-height: 100vh;
+            margin-left: -15rem;
+            -webkit-transition: margin .25s ease-out;
+            -moz-transition: margin .25s ease-out;
+            -o-transition: margin .25s ease-out;
+            transition: margin .25s ease-out;
+        }
+
+        #sidebar-wrapper .sidebar-heading {
+            padding: 0.875rem 1.25rem;
+            font-size: 1.2rem;
+        }
+
+        #sidebar-wrapper .list-group {
+            width: 15rem;
+        }
+
+        #page-content-wrapper {
+            min-width: 100vw;
+        }
+
+        #wrapper.toggled #sidebar-wrapper {
+            margin-left: 0;
+        }
+
+        @media (min-width: 768px) {
+            #sidebar-wrapper {
+                margin-left: 0;
+            }
+
+            #page-content-wrapper {
+                min-width: 0;
+                width: 100%;
+            }
+
+            #wrapper.toggled #sidebar-wrapper {
+                margin-left: -15rem;
+            }
+        }
+
+        img{
+            max-height: 300px;
+        }
+        .container-fluid{
+            font-size: 10pt;
+        }
+        .sidetitle{
+            font-size: 9.5pt;
+        }
+    
+    </style>
+    
+</head>
+
+<body>
+    <div class="d-flex" id="wrapper">
+    <!-- Sidebar -->
+    <div class="bg-light border-right" id="sidebar-wrapper">
+        <div class="sidebar-heading"> </div>
+        <div class="list-group list-group-flush">
+          <a href="home.html" class="sidetitle list-group-item list-group-item-action bg-light">HOME</a>
+          <a href="masks.html" class="sidetitle list-group-item list-group-item-action bg-light">1) The 4 Mask Types</a>
+          <a href="care.html" class="sidetitle list-group-item list-group-item-action bg-light">2) Mask Care</a>
+          <a href="safety.html" class="sidetitle list-group-item list-group-item-action bg-light">3) Mask Safety</a>
+          <a href="quiz.html" class="sidetitle list-group-item list-group-item-action bg-light">4) Quiz</a>
+        </div>
+      </div>
+      <!-- /#sidebar-wrapper -->
+
+    <div class="container">
+
+
+    
+    <div class="container">
+                <h1>COVID-19 Masks</h1>
+                <div id="mission"> The necessary 5 to 10-minute module that teaches you all the most important information about
+                    protecting yourself from coronavirus with a mask. Proceed to a section on the left hand side or click a link below:
+                </div>
+                <div id="links">
+                    <a class="go" href="masks.html">1) Learn about the 4 main types of masks</a>
+                    <a class="go" href="care.html">2) How to care for your mask</a> <br>
+                    <a class="go" href="safety.html">3) The safe way of using a mask</a>
+                    <a class="go" href="quiz.html">4) Take a quiz to test your knowledge</a>
+                </div>
+                
+            
+    </div>
+
+</div>
+</div>
+</body>
+</html>

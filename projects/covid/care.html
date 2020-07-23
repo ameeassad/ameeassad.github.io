@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>COVID-19 Masks</title>
+    <meta charset="utf-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="css/simple-sidebar.css" rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js"></script>
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+
+    <script>
+
+        $(document).ready(function(){
+            console.log("ready")
+
+        })
+    </script>
+        
+    <style>
+        h1{
+            padding: 5%;
+            font-size: 22pt;
+            text-align: center;
+        }
+        img {
+            width: 100%;
+            height: 250px;
+            object-fit:scale-down;
+        }
+        #mission{
+            font-size: 14px;
+        }
+        .bold{
+            font-weight: 700;
+        }
+        .title{
+            text-align: center;
+            font-size: 24pt;
+            padding-bottom: 5%;
+        }
+        .description{
+            padding: 5%;
+            font-size: 11pt;
+        }
+
+
+    </style>
+
+<script>
+    $(document).ready(function(){
+
+        $("#menu-toggle").click(function(e) {
+            e.preventDefault();
+            $("#wrapper").toggleClass("toggled");
+        });
+    })
+
+    </script>
+
+    <style>
+        
+        #sidebar-wrapper {
+            min-height: 100vh;
+            margin-left: -15rem;
+            -webkit-transition: margin .25s ease-out;
+            -moz-transition: margin .25s ease-out;
+            -o-transition: margin .25s ease-out;
+            transition: margin .25s ease-out;
+        }
+
+        #sidebar-wrapper .sidebar-heading {
+            padding: 0.875rem 1.25rem;
+            font-size: 1.2rem;
+        }
+
+        #sidebar-wrapper .list-group {
+            width: 15rem;
+        }
+
+        #page-content-wrapper {
+            min-width: 100vw;
+        }
+
+        #wrapper.toggled #sidebar-wrapper {
+            margin-left: 0;
+        }
+
+        @media (min-width: 768px) {
+            #sidebar-wrapper {
+                margin-left: 0;
+            }
+
+            #page-content-wrapper {
+                min-width: 0;
+                width: 100%;
+            }
+
+            #wrapper.toggled #sidebar-wrapper {
+                margin-left: -15rem;
+            }
+        }
+
+        img{
+            max-height: 300px;
+        }
+        .container-fluid{
+            font-size: 10pt;
+        }
+        .sidetitle{
+            font-size: 9.5pt;
+        }
+    
+    </style>
+    
+</head>
+
+<body>
+    <div class="d-flex" id="wrapper">
+    <!-- Sidebar -->
+    <div class="bg-light border-right" id="sidebar-wrapper">
+        <div class="sidebar-heading"> </div>
+        <div class="list-group list-group-flush">
+          <a href="home.html" class="sidetitle list-group-item list-group-item-action bg-light">HOME</a>
+          <a href="masks.html" class="sidetitle list-group-item list-group-item-action bg-light">1) The 4 Mask Types</a>
+          <a href="care.html" class="sidetitle list-group-item list-group-item-action bg-light">2) Mask Care</a>
+          <a href="safety.html" class="sidetitle list-group-item list-group-item-action bg-light">3) Mask Safety</a>
+          <a href="quiz.html" class="sidetitle list-group-item list-group-item-action bg-light">4) Quiz</a>
+        </div>
+      </div>
+      <!-- /#sidebar-wrapper -->
+
+    <div class="container">
+    
+    <div class="container">
+        <h1> Mask Care </h1>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="title">SINGLE USE<br>(Medical and N95)</div>
+                <img src="images/medmaskscare.jpg">
+                <div class="description"> 
+                    <span class="bold">Medical masks are designed for one-time use. However, they are also in short supply and are highly pollutive to the environment.</span>
+                    <br><br>
+                    For re-use, you can also give time for the virus to die before re-wearing, or sanitize the mask with liquid hydrogen peroxide. 
+                    Do NOT use bleach, alcohol, sanitizing wipes, or soapy water.
+                    <br><br> 
+                    Best strategy: if you have multiple masks, <span class="bold">rotate use of the masks over several days.</span>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="title">MULTI USE<br>(All fabric masks)</div>
+                <img src="images/hanging.png">
+                <div class="description"> 
+                   <span class="bold">Wash daily</span> in a machine or a sink, with regular laundry soap. Machine or air dry. 
+                    <br><br>
+                    Although it’s not necessary, you can also go over it with a hot iron for a full assault on any germs that might remain.
+                    <br><br>
+                    <span class="bold">Do NOT bleach</span> -- harsh chemicals will begin to degrade the fabric fibers, making the mask less effective. 
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+</div>
+</body>
+</html>
