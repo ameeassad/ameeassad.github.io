@@ -19,12 +19,12 @@ var allQuestions = [{
     answer: 4,
     explanation: "No mask fully protects you from the coronavirus."
   }, {
-    question: "<img src='/static/images/maskundernose.jpg'> This person is wearing her mask correctly.",
+    question: "<img src='images/maskundernose.jpg'> This person is wearing her mask correctly.",
     options: ["True", "False"],
     answer: 1,
     explanation: "The mask must cover the nose or else it is pointless."
   },{
-    question: "<img src='/static/images/touchingmask.jpg'> What is wrong with this mask handling?",
+    question: "<img src='images/touchingmask.jpg'> What is wrong with this mask handling?",
     options: ["Nothing", "The mask is too low", "The user must not touch the front of the mask"],
     answer: 2,
     explanation: "Do not touch the front of the mask. Instead, handle the mask by its loops or the unfiltered top or bottom parts."
