@@ -157,6 +157,8 @@
     }
     .proj-container{
       height: 200px;
-      top: 5;
+    }
+    social{
+      top: 3;
     }
   }
