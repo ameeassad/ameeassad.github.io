@@ -156,3 +156,16 @@
   .background .water:target{
     filter:none;
   }
+
+  #igloo, #redsea, #covid{
+    width: 90%;
+    height: auto;
+  }
+
+  @media only screen and (min-device-width : 320px) and (max-device-width : 480px){
+    .pages{
+      display: block;
+      width: 80%;
+      margin-top: 3.5%;
+    }
+  }
