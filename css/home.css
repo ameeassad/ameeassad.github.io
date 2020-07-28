@@ -94,28 +94,6 @@
     opacity: 0.7;
   }
 
-  .fa{
-    padding: 3px;
-    font-size: 30px;
-    margin-right: 3px;
-    width: 20px;
-    height: 20px;
-    text-align: center;
-    text-decoration: none;
-    border-radius: 50%;
-  }
-  
-  .fa-linkedin {
-    background: #0e76a8;
-    color: white;
-  }
-  
-  .fa-instagram {
-    background: #d6249f;
-    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
-    color: white;
-  }
-
   .slider {
     margin-top: 14%;
     position: absolute;
@@ -159,13 +137,16 @@
 
   #igloo, #redsea, #covid{
     width: 90%;
-    height: auto;
+    height: 70%;
   }
 
-  @media only screen and (min-device-width : 320px) and (max-device-width : 480px){
+  @media only screen{
     .pages{
       display: block;
       width: 80%;
       margin-top: 3.5%;
+    }
+    .page{
+      display: block;
     }
   }
