@@ -155,10 +155,8 @@
     .page{
       display: block;
     }
-    .social{
-      top: -2;
-    }
     .proj-container{
       height: 200px;
+      top: 5;
     }
   }
