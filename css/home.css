@@ -141,7 +141,7 @@
   }
 
   .proj-container{
-    width: 90%;
+    width: 80%;
     height: 700px;
   }
 
@@ -150,13 +150,13 @@
       display: block;
       width: 80%;
       margin-top: 3.5%;
-      top: 15%;
+      top: 10;
     }
     .page{
       display: block;
     }
     .social{
-      top: -50%;
+      top: -10;
     }
     .proj-container{
       height: 200px;
