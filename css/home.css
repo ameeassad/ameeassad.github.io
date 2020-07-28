@@ -137,7 +137,7 @@
 
   #igloo, #redsea, #covid{
     width: 90%;
-    height: 70%;
+    height: 100%;
   }
 
   @media only screen{
@@ -145,7 +145,7 @@
       display: block;
       width: 80%;
       margin-top: 3.5%;
-      top: 10;
+      top: 15%;
     }
     .page{
       display: block;
