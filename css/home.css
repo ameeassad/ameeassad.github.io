@@ -118,6 +118,8 @@
     padding-left: 5%;
     padding-right: 5%;
     padding-top: 2%;
+    overflow-y:auto;
+    width: 100%;
   }
   
   .slider.close {
@@ -135,14 +137,29 @@
     filter:none;
   }
 
-  #igloo, #redsea, #covid{
+  #igloo, #covid{
     width: 100%;
     height: 100%;
+  }
+  .redsea-img{
+    width: auto;
+    height: 30%;
+    object-fit: cover;
+  }
+  .mombot-img{
+    height: 80%;
+    width: auto;
+    object-fit: cover;
   }
 
   .proj-container{
     width: 80%;
     height: 700px;
+  }
+
+  .back{
+    display: inline-block;
+    cursor: pointer;
   }
 
   @media only screen and (max-width: 600px){
@@ -158,7 +175,7 @@
     .proj-container{
       height: 300px;
     }
-    social{
+    .social{
       top: 0;
     }
   }

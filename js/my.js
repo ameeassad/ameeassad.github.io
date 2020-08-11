@@ -45,6 +45,10 @@ $(document).ready(function(){
     })
   }
 
+  $(".back").click(function(){
+    closeAll()
+  })
+
   //if click outside slider -> add class close to all sliders
   $(document).mouseup(function(e) {
     var container = $(".slider");
@@ -54,4 +58,5 @@ $(document).ready(function(){
       closeAll()
     }
   });
+
 })
